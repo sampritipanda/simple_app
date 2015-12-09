@@ -18,6 +18,7 @@ An app where users register with their name, email, city and country. On logging
 1. Rails (4.2.4) - The Framework
 1. MySQL - The Database
 1. Devise - Gem for Authentication System
+1. Bootstrap - Improved User Interface
 
 ## User Interface
 
