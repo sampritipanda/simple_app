@@ -11,11 +11,11 @@
       </div>
       <div class="form-group">
         <%= f.label :email %>
-        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+        <%= f.email_field :email, class: "form-control" %>
       </div>
       <div class="form-group">
         <%= f.label :username %>
-        <%= f.text_field :username, autofocus: true, class: "form-control" %>
+        <%= f.text_field :username, class: "form-control" %>
       </div>
       <div class="form-group">
         <%= f.label :password %><br />
@@ -27,11 +27,11 @@
       </div>
       <div class="form-group">
         <%= f.label :city %>
-        <%= f.text_field :city, autofocus: true, class: "form-control" %>
+        <%= f.text_field :city, class: "form-control" %>
       </div>
       <div class="form-group">
         <%= f.label :country %>
-        <%= f.text_field :country, autofocus: true, class: "form-control" %>
+        <%= f.country_select :country, {}, { class: 'form-control' } %>
       </div>
       <%= f.submit t('.sign_up', :default => "Sign up"), class: "btn btn-primary" %>
     <% end %>
