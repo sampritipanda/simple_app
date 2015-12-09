@@ -1,16 +1,12 @@
-<h1>Dashboard</h1>
-
-<p>Logged in as <%= current_user.name %></p>
-<p><%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
-<p><%= link_to 'Edit Profile', edit_user_registration_path %>
-
-
-<h2>List of Users</h2>
-<table border="1">
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Location</th>
+      <th><%= "Name" %></th>
+      <th><%= "Location" %></th>
     </tr>
   </thead>
   <tbody>
@@ -22,3 +18,4 @@
     <% end %>
   </tbody>
 </table>
+
