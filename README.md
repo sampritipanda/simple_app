@@ -8,7 +8,8 @@ An app where users register with their name, email, city and country. On logging
 1. Install Ruby (version >= 2.1) and Bundler
 1. Install MySQL
 1. cd into the project directory and run `bundle install`
-1. Run `rake db:create` to create database.
+1. Copy the `config/database.yml.example` to `config/database.yml` change the username and password to your system's configuration.
+1. Run `rake db:setup` to setup the database.
 1. Run `rails server` to start up the server
 1. Go to http://localhost:3000 to view the website.
 
